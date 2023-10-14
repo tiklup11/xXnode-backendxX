@@ -18,7 +18,7 @@ const upload = multer({ storage: storage });
 app.get("/", function (req, res) {
   res.send("Welcome to crazy nerds");
 });
-let count = 0;
+let c = 0;
 
 // Define an array of URLs
 
