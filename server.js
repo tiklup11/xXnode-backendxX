@@ -45,9 +45,9 @@ const urls = [
 
 // Create a GET endpoint that responds with the array of URLs
 app.get("/test", (req, res) => {
-  if (c % 3 === 0) res.json({ data: tiles });
-  else if (c % 3 === 1) res.json({ data: fans });
-  else res.json({ data: light_bulb });
+  if (c % 3 === 0) res.json({ data: fans });
+  else if (c % 3 === 1) res.json({ data: light_bulb });
+  else res.json({ data: tiles });
   c++;
   res.json({ data: urls });
 });
