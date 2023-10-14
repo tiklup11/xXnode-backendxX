@@ -25,11 +25,11 @@ let c = 0;
 const tiles = [
   "https://assets-news.housing.com/news/wp-content/uploads/2022/03/16195548/21-small-bathroom-tiles-design.jpg",
   "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
-  "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
+  "https://5.imimg.com/data5/SELLER/Default/2023/6/313528206/AW/DT/FH/154242196/alfredo-light-ceramic-tile.jpg",
 ];
 const fans = [
   "https://www.realsimple.com/thmb/PiBiYsb9YgZ3ZBY4cU9-fT4Iki8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/real-simple-fan-test-lead-67d01b3d1d704411b07219fe6d192b3e.jpg",
-  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FKhaitar-Super-Delux-Fans%2Fdp%2FB082M9VFTL&psig=AOvVaw3aFeI0bd1amB8P1dEh8VyZ&ust=1697351426130000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLjm1vj09IEDFQAAAAAdAAAAABAJ",
+  "https://www.ushafans.com/sites/default/files/lifestyle-fan.png",
   "https://great-white.in/images/Brown-Copter-32-Pro.jpg",
 ];
 const light_bulb = [
@@ -40,7 +40,7 @@ const light_bulb = [
 const urls = [
   "https://assets-news.housing.com/news/wp-content/uploads/2022/03/16195548/21-small-bathroom-tiles-design.jpg",
   "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
-  "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
+  "https://5.imimg.com/data5/SELLER/Default/2023/6/313528206/AW/DT/FH/154242196/alfredo-light-ceramic-tile.jpg",
 ];
 
 // Create a GET endpoint that responds with the array of URLs
