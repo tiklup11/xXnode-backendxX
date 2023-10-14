@@ -25,6 +25,7 @@ let count = 0;
 const tiles = [
   "https://assets-news.housing.com/news/wp-content/uploads/2022/03/16195548/21-small-bathroom-tiles-design.jpg",
   "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
+  "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
 ];
 const fans = [
   "https://www.realsimple.com/thmb/PiBiYsb9YgZ3ZBY4cU9-fT4Iki8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/real-simple-fan-test-lead-67d01b3d1d704411b07219fe6d192b3e.jpg",
@@ -36,14 +37,19 @@ const light_bulb = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuN03HmBtiocWCv0H6JjHh4sdEg0am5DqNWs3r29UsICtvfPjkop-vxvco3ojizbtuDB4&usqp=CAU",
   "https://www.ikea.com/global/assets/range-categorisation/images/decorative-pendant-lamps-700177.jpeg?imwidth=500",
 ];
+const urls = [
+  "https://assets-news.housing.com/news/wp-content/uploads/2022/03/16195548/21-small-bathroom-tiles-design.jpg",
+  "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
+  "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
+];
 
 // Create a GET endpoint that responds with the array of URLs
 app.get("/test", (req, res) => {
-  if (c % 3 == 0) res.json({ data: tiles });
-  else if (c % 3 == 1) res.json({ data: fans });
+  if (c % 3 === 0) res.json({ data: tiles });
+  else if (c % 3 === 1) res.json({ data: fans });
   else res.json({ data: light_bulb });
   c++;
-  // res.json({ data: urls });
+  res.json({ data: urls });
 });
 
 app.post("/upload_image", upload.single("image"), async (req, res) => {
