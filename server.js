@@ -19,6 +19,18 @@ app.get("/", function (req, res) {
   res.send("Welcome to crazy nerds");
 });
 
+// Define an array of URLs
+const urls = [
+  "https://assets-news.housing.com/news/wp-content/uploads/2022/03/16195548/21-small-bathroom-tiles-design.jpg",
+  "https://5.imimg.com/data5/JW/MV/MY-8533797/glazed-floor-tiles.jpg",
+  "https://www.hrjohnsonindia.com/assets/images/blog/armilo-silver-thumb-og.jpg",
+];
+
+// Create a GET endpoint that responds with the array of URLs
+app.get("/test", (req, res) => {
+  res.json({ data: urls });
+});
+
 app.post("/upload_image", upload.single("image"), async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ message: "Image not provided." });
@@ -33,7 +45,7 @@ app.post("/upload_image", upload.single("image"), async (req, res) => {
     });
 
     const response = await axios.post(
-      "http://127.0.0.1:5000/predict",
+      "https://ml-model-service.onrender.com/predict",
       formData,
       {
         headers: {
